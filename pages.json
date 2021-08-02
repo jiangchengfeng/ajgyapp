@@ -1,0 +1,195 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		    
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "安吉智慧排水管控平台",
+				"enablePullDownRefresh": true
+			}
+		}
+	    ,{
+            "path" : "pages/monitor/monitor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "实时监测",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/alert/alert",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "实时报警",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/workOrder/workOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工单管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor": "#4188f2",
+				"h5": {
+					"pullToRefresh": {
+						"color": "#4188f2"
+					}
+				}
+			}
+            
+        }
+        ,{
+            "path" : "pages/index/Nav/Nav",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+		    "path" : "pages/index/Nav/DataGl",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+		    "path" : "pages/index/Nav/Db",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		}
+        
+        ,{
+            "path" : "pages/orderReport/orderReport",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工单上报",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderReport/add/add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderReport/xq/xq",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderReport/xq/spxq",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "审批详情",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/gis/gis",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "GIS",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/gis/map/map",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/wddb/wddb",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的待办",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#3d64ac",
+		"backgroundColor": "#efefef"
+	},
+	"tabBar": {
+		"color": "#808080",
+		"selectedColor": "#007AFF",
+		// "borderStyle":"white",
+		"list": [{
+				"text": "监测",
+				"pagePath": "pages/monitor/monitor",
+				"iconPath": "static/tabs/monitor.png",
+				"selectedIconPath": "static/tabs/monitor_active.png"
+			},
+			{
+				"text": "报警",
+				"pagePath": "pages/alert/alert",
+				"iconPath": "static/tabs/bj.png",
+				"selectedIconPath": "static/tabs/bj_active.png"
+			},
+			{
+				"text": "主页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/home.png",
+				"selectedIconPath": "static/tabs/home_active.png"
+			},
+			{
+				"text": "GIS",
+				"pagePath": "pages/gis/gis",
+				"iconPath": "static/tabs/gd.png",
+				"selectedIconPath": "static/tabs/gd_active.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabs/my.png",
+				"selectedIconPath": "static/tabs/my_active.png"
+			}
+		]
+	
+	}
+	
+}
