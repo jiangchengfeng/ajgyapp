@@ -126,6 +126,7 @@
 				this.$api.monitor({
 					url: '/api/home/data/devReal/nowdata?type=污水井'
 				}).then(res => {
+					
 					this.dataList[0].val = res.data.total
 					this.dataList[2].val = res.data.offlineTotal
 					this.dataList[1].val = res.data.regularTotal
@@ -276,16 +277,19 @@
 				this.$api.monitor({
 					url: '/api/home/data/station/zc_fl_rg?type=污水井'
 				}).then(res => {
-					// 
-					this.dataList[0].val = res.data.total
-					this.dataList[2].val = res.data.offlineTotal
-					this.dataList[1].val = res.data.regularTotal
-					// this.dataList[3].val = res.data.warnTotal
-					this.$api.monitor({
-						url: `/api/home/data/warn/history?lx1=流量计&stationType=1`
-					}).then(res => {
-						this.dataList[3].val = res.data.total
-					})
+					if(res.data.code == 200){
+						this.dataList[0].val = res.data.total
+						this.dataList[2].val = res.data.offlineTotal
+						this.dataList[1].val = res.data.regularTotal
+						// this.dataList[3].val = res.d/api/home/data/warn/history?lx1=流量计&stationType=1ata.warnTotal
+						this.$api.monitor({
+							url: ``
+						}).then(res => {
+							this.dataList[3].val = res.data.total
+						})
+					}
+				},err=>{
+					console.log(err);
 				})
 			},
 			getFlowListYs() {
@@ -314,14 +318,16 @@
 				this.$api.monitor({
 					url: '/api/home/data/station/zc_fl_rg?type=雨水井'
 				}).then(res => {
-					this.dataList2[0].val = res.data.total
-					this.dataList2[2].val = res.data.offlineTotal
-					this.dataList2[1].val = res.data.regularTotal
-					this.$api.monitor({
-						url: `/api/home/data/warn/history?lx1=流量计&stationType=2`
-					}).then(res => {
-						this.dataList2[3].val = res.data.total
-					})
+					if(res.data.code == 200){
+						this.dataList2[0].val = res.data.total
+						this.dataList2[2].val = res.data.offlineTotal
+						this.dataList2[1].val = res.data.regularTotal
+						this.$api.monitor({
+							url: `/api/home/data/warn/history?lx1=流量计&stationType=2`
+						}).then(res => {
+							this.dataList2[3].val = res.data.total
+						})
+					}
 				})
 			},
 			

@@ -2,8 +2,8 @@
     "name" : "安吉智慧排水",
     "appid" : "__UNI__0E0F0FF",
     "description" : "安吉智慧排水",
-    "versionName" : "1.1.2",
-    "versionCode" : 112,
+    "versionName" : "1.1.4",
+    "versionCode" : 114,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {

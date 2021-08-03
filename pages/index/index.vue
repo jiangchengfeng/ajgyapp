@@ -32,7 +32,7 @@
 		onLoad() {
 			this.getDbList()
 			this.getDbListYs()
-			// console.log(uni.getStorageSync('userInfo').appqx);
+			console.log(uni.getStorageSync('userInfo').appqx);
 			this.appqx = uni.getStorageSync('userInfo').appqx
 		},
 		components:{

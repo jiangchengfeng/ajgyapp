@@ -96,7 +96,7 @@
 		computed: {
 			getSrc(src) {
 				return function(src) {
-					return 'http://115.231.254.38:11021/' + src
+					return 'http://115.231.254.38:11020/' + src
 				}
 			}
 		},

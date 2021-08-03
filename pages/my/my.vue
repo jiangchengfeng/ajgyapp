@@ -60,7 +60,7 @@
 			gx(e) {
 				console.log(e);
 				//#ifdef APP-PLUS
-				var server = "http://115.231.254.38:11021/ajgy2backend/luoben/api/applist?qs=2"; //检查更新地址  
+				var server = "http://115.231.254.38:11020/ajgy2backend/luoben/api/applist?qs=2"; //检查更新地址  
 				var req = { //升级检测数据  
 					"appid": plus.runtime.appid,
 					"version": plus.runtime.version

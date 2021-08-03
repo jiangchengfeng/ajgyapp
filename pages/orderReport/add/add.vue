@@ -72,7 +72,7 @@
 				djOpt: [],
 				djName: '',
 
-				action: 'http://115.231.254.38:11021/ajgy2backend/rural/workOrder/importFile',
+				action: 'http://115.231.254.38:11020/ajgy2backend/rural/workOrder/importFile',
 				headers: {
 					Authorization: "Bearer " + uni.getStorageSync('token')
 				},

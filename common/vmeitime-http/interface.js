@@ -31,7 +31,7 @@ http.delete('user/1').then((res)=>{
 */
 export default {
 	config: {
-		baseUrl: "http://115.231.254.38:11021/ajgy2backend",
+		baseUrl: "http://115.231.254.38:11020/ajgy2backend",
 		header: {
 			'Content-Type':'application/json;charset=UTF-8',
 			// 'Content-Type':'application/x-www-form-urlencoded' 
