@@ -80,6 +80,7 @@
 								}).then(res => {
 									// console.log(res);
 									uni.setStorageSync('userInfo', res.data.user);
+									// #ifdef APP-PLUS
 									const  cid = plus.push.getClientInfo().clientid
 									const userId = uni.getStorageSync('userInfo').userId
 									// console.log(cid);
@@ -94,6 +95,10 @@
 											url: '../index/index'
 										});
 									})
+									// #endif
+									uni.reLaunch({
+											url: '../index/index'
+										});
 
 								}, err => {
 									console.log(err);
